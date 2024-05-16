@@ -1,7 +1,7 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
-class MyHomePage  extends StatelessWidget {
+class MyHomePage extends StatelessWidget {
   const MyHomePage({super.key});
 
   @override
@@ -11,9 +11,10 @@ class MyHomePage  extends StatelessWidget {
         child: Text("My Drawer"),
       ),
       appBar: AppBar(title: Text('My Home Page')),
-        body: Center(
-          child: Text("Hello my name is Flutter",style:TextStyle(fontSize: 30,color: Colors.red)),
-        ),
+      body: Center(
+        child: Text("Hello my name is Flutter",
+            style: TextStyle(fontSize: 30, color: Colors.lightGreen)),
+      ),
     );
   }
 }
