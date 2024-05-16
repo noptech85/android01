@@ -1,3 +1,4 @@
+import 'package:android01/my_second_page.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
@@ -12,8 +13,19 @@ class MyHomePage extends StatelessWidget {
       ),
       appBar: AppBar(title: Text('My Home Page')),
       body: Center(
-        child: Text("Hello my name is Flutter",
-            style: TextStyle(fontSize: 30, color: Colors.lightGreen)),
+        child: Column(
+          children: [
+            Text("Hello World"),
+            ElevatedButton(
+                onPressed: () {
+                //  Navigator.push(context, route)
+                  Navigator.of(context).push(
+                    MaterialPageRoute(builder: (context)=> MySecondPage(),)
+                  );
+                },
+                child: Text("Next Page2"))
+          ],
+        ),
       ),
     );
   }
