@@ -7,11 +7,13 @@ class MyHomePage  extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      drawer: Drawer(),
-      appBar: AppBar(
-        title: Text('My Home Page'),
-
+      drawer: Drawer(
+        child: Text("My Drawer"),
       ),
+      appBar: AppBar(title: Text('My Home Page')),
+        body: Center(
+          child: Text("Hello my name is Flutter",style:TextStyle(fontSize: 30,color: Colors.red)),
+        ),
     );
   }
 }
